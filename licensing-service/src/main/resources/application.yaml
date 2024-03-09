@@ -2,5 +2,5 @@ springdoc:
   api-docs:
     enabled: true
     path: /api-docs
-server:
-  port: 8988
+#server:
+#  port: 8988
