@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  license-services:
+    build: licensing-service
+    ports:
+      - '8080:8080'

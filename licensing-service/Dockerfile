@@ -1,13 +1,5 @@
-FROM gradle:latest AS BUILD
-WORKDIR /usr/app
-COPY . . 
-RUN gradle build
-
-
-FROM eclipse-temurin:21-jre-jammy
-ENV JAR_NAME=app.jar
-ENV APP_HOME=/usr/app
-WORKDIR $APP_HOME
-COPY --from=BUILD $APP_HOME .
+FROM eclipse-temurin:17-jre
 EXPOSE 8080
-ENTRYPOINT exec java -jar $APP_HOME/build/libs/$JAR_NAME
+WORKDIR /opt/app
+COPY build/libs/*.jar app.jar
+ENTRYPOINT ["java","-jar", "app.jar"]
