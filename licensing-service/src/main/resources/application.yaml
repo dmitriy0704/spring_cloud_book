@@ -2,5 +2,19 @@ springdoc:
   api-docs:
     enabled: true
     path: /api-docs
-#server:
-#  port: 8988
+
+#management:
+management:
+  endpoints:
+    web:
+      base-path: "/"
+    enabled-by-default: false
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  health:
+    db:
+      enabled: false
+    diskspace:
+      enabled: true
