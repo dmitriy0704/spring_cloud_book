@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="Подключение сообщений для ответа">
-      <change afterPath="$PROJECT_DIR$/licensing-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/docker-compose.yml" afterDir="false" />
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="add swagger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +47,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="licensing-service" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="licensing-service" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="licensing-service" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
