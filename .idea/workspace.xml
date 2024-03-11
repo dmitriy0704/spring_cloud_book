@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="add Dockerfile, docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/actions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/java/com/optimagrowth/configserver/ConfigserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/test/java/com/optimagrowth/configserver/ConfigserverApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/config/ServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,27 +35,81 @@
         <task path="$PROJECT_DIR$/licensing-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/configserver">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="licensing-service" type="f1a62948:ProjectNode" />
+                <item name="configserver" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="licensing-service" type="f1a62948:ProjectNode" />
+                <item name="configserver" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="licensing-service" type="f1a62948:ProjectNode" />
+                <item name="configserver" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="configserver" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="configserver" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="configserver" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="configserver" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="licensing-service" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="licensing-service" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring_cloud_book" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring_cloud_book" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring_cloud_book" type="f1a62948:ProjectNode" />
+                <item name="configserver" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring_cloud_book" type="f1a62948:ProjectNode" />
+                <item name="configserver" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -81,8 +122,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Dockerfile" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -111,22 +152,29 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Gradle.Build configserver.executor": "Run",
     "Gradle.Build licensing-service.executor": "Run",
     "Gradle.Build spring_cloud_book.executor": "Run",
+    "Gradle.configserver [bootRun].executor": "Run",
+    "Gradle.configserver [build].executor": "Run",
+    "Gradle.configserver [classes].executor": "Run",
+    "Gradle.configserver [clean].executor": "Run",
     "Gradle.licensing-service [javadoc].executor": "Run",
+    "Gradle.spring_cloud_book [init].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
     "Spring Boot.LicensingServiceApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/devs/code/cloud/spring_cloud_book/configserver/src/main/resources/config",
+    "last_opened_file_path": "/home/devs/code/cloud/spring_cloud_book/licensing-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -135,12 +183,13 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "terminal",
+    "settings.editor.selected.configurable": "spring",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/licensing-service" />
       <recent name="$PROJECT_DIR$/configserver/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/configserver" />
       <recent name="$PROJECT_DIR$" />
@@ -153,19 +202,26 @@
       <recent name="com.optimagrowth.license.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
-    <configuration name="licensing-service [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConfigserverApplication">
+    <configuration name="configserver [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/licensing-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/configserver" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="javadoc" />
+            <option value="bootRun" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -176,15 +232,96 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConfigserverApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring_cloud_book.configserver.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.configserver.ConfigserverApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="configserver [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/configserver" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="configserver [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/configserver" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="configserver [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/configserver" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring_cloud_book [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="init" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="configserver.main" />
+      <module name="spring_cloud_book.configserver.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.configserver.ConfigserverApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,21 +335,27 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.configserver [bootRun]" />
+      <item itemvalue="Gradle.configserver [build]" />
+      <item itemvalue="Gradle.configserver [clean]" />
+      <item itemvalue="Gradle.spring_cloud_book [init]" />
+      <item itemvalue="Gradle.configserver [classes]" />
+      <item itemvalue="Spring Boot.ConfigserverApplication" />
+      <item itemvalue="Spring Boot.LicensingServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Gradle.licensing-service [javadoc]" />
+        <item itemvalue="Gradle.configserver [classes]" />
+        <item itemvalue="Gradle.configserver [build]" />
+        <item itemvalue="Gradle.spring_cloud_book [init]" />
+        <item itemvalue="Gradle.configserver [bootRun]" />
+        <item itemvalue="Gradle.configserver [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +389,9 @@
       <workItem from="1710084219923" duration="878000" />
       <workItem from="1710103601690" duration="815000" />
       <workItem from="1710107147096" duration="44000" />
-      <workItem from="1710165290355" duration="12538000" />
+      <workItem from="1710165290355" duration="15646000" />
+      <workItem from="1710186245411" duration="830000" />
+      <workItem from="1710187088948" duration="1914000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -285,6 +430,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
