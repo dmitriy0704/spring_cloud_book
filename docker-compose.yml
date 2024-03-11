@@ -10,8 +10,7 @@ services:
       POSTGRES_PASSWORD: "postgres"
       POSTGRES_DB: "ostock_dev"
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/1-init.sql
-      - ./data.sql:/docker-entrypoint-initdb.d/2-data.sql
+      - postgres:/data/postgres
     networks:
       backend:
         aliases:
@@ -21,6 +20,22 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - backend
+    restart: unless-stopped
+
 #  configserver:
 #    build: configserver
 #    image: configserver-image
@@ -55,3 +70,7 @@ services:
 networks:
   backend:
     driver: bridge
+
+volumes:
+  postgres:
+  pgadmin:

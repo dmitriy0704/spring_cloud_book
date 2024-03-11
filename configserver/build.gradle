@@ -29,7 +29,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.cloud:spring-cloud-config-server'
 	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap
-	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-bootstrap', version: '4.1.1'
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
