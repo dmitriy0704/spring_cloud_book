@@ -1,3 +1,4 @@
 rootProject.name = 'spring_cloud_book'
 
 include ':licensing-service'
+include ':configserver'

@@ -1,0 +1,13 @@
+server:
+  port: 8071
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:dmitriy0704/springcloudconfig.git
+          default-label: main
+          search-paths: "{application}"
