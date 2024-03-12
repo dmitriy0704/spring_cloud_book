@@ -7,6 +7,7 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.hateoas.RepresentationModel;
 
 
 @Getter
@@ -14,7 +15,7 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "licenses")
-public class License {
+public class License  extends RepresentationModel<License> {
 
     @Id
     @Column(name = "license_Id", nullable = false)
