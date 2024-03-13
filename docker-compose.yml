@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
   database:
@@ -36,37 +36,58 @@ services:
       - backend
     restart: unless-stopped
 
-#  configserver:
-#    build: configserver
-#    image: configserver-image
-#    container_name: configserver
+  #  configserver:
+  #    build: configserver
+  #    image: configserver-image
+  #    container_name: configserver
+  #    ports:
+  #      - '8071:8071'
+  #    networks:
+  #      backend:
+  #        aliases:
+  #          - "configserver"
+  #  licensingservice:
+  #    build: licensing-service
+  #    image: licensing-service-image
+  #    container_name: licenseservice
+  #    environment:
+  #      - SPRING_PROFILES_ACTIVE=dev
+  #      - CONFIGSERVER_URI=http://configserver:8071
+  #      - CONFIGSERVER_PORT=8071
+  #      - DATABASESERVER_PORT=5432
+  #    depends_on:
+  #      database:
+  #        condition: service_healthy
+  #      configserver:
+  #        condition: service_healthy
+  #    ports:
+  #      - '8080:8080'
+  #    networks:
+  #      backend:
+  #        aliases:
+  #          - "licenseservice"
+#  vault:
+#    image: vault:latest
+#    container_name: vault
+#    restart: on-failure:10
 #    ports:
-#      - '8071:8071'
-#    networks:
-#      backend:
-#        aliases:
-#          - "configserver"
-#  licensingservice:
-#    build: licensing-service
-#    image: licensing-service-image
-#    container_name: licenseservice
+#      - "8201:8201"
 #    environment:
-#      - SPRING_PROFILES_ACTIVE=dev
-#      - CONFIGSERVER_URI=http://configserver:8071
-#      - CONFIGSERVER_PORT=8071
-#      - DATABASESERVER_PORT=5432
-#    depends_on:
-#      database:
-#        condition: service_healthy
-#      configserver:
-#        condition: service_healthy
-#    ports:
-#      - '8080:8080'
+#      VAULT_ADDR: 'https://0.0.0.0:8201'
+#      VAULT_LOCAL_CONFIG: '{"listener": [{"tcp":{"address": "0.0.0.0:8201","tls_disable":"0", "tls_cert_file":"/data/vault-volume/certificate.pem", "tls_key_file":"/data/vault-volume/key.pem"}}], "default_lease_ttl": "168h", "max_lease_ttl": "720h"}, "ui": true}'
+#      VAULT_DEV_ROOT_TOKEN_ID: '00000000-0000-0000-0000-000000000000'
+#      VAULT_TOKEN: '00000000-0000-0000-0000-000000000000'
+#    cap_add:
+#      - IPC_LOCK
+#    volumes:
+#      - vault-volume:/data
+#    healthcheck:
+#      retries: 5
+#    command: server -dev -dev-root-token-id="00000000-0000-0000-0000-000000000000"
 #    networks:
-#      backend:
-#        aliases:
-#          - "licenseservice"
-
+#          backend:
+#            aliases:
+#              - "vault"
 networks:
   backend:
     driver: bridge
@@ -74,3 +95,4 @@ networks:
 volumes:
   postgres:
   pgadmin:
+  vault:
