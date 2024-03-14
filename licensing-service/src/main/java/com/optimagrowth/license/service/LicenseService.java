@@ -42,13 +42,11 @@ public class LicenseService {
     public License createLicense(License license){
         license.setLicenseId(UUID.randomUUID().toString());
         licenseRepository.save(license);
-
         return license.withComment(config.getProperty());
     }
 
     public License updateLicense(License license){
         licenseRepository.save(license);
-
         return license.withComment(config.getProperty());
     }
 
@@ -59,6 +57,5 @@ public class LicenseService {
         licenseRepository.delete(license);
         responseMessage = String.format(messages.getMessage("license.delete.message", null, null),licenseId);
         return responseMessage;
-
     }
 }

@@ -9,6 +9,6 @@ spring:
       server:
         git:
           uri: git@github.com:dmitriy0704/springcloudconfig.git
-          search-paths: licensing-service
+#          search-paths: config
           default-label: master
         bootstrap: true
