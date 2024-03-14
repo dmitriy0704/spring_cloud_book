@@ -4,11 +4,14 @@ server:
 spring:
   application:
     name: config-server
+  profiles:
+    active:
+      - git
   cloud:
     config:
       server:
         git:
-          uri: git@github.com:dmitriy0704/springcloudconfig.git
+          uri: git@github.com:dmitriy0704/springcloudconfig.git/
 #          search-paths: config
           default-label: master
         bootstrap: true
