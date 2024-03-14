@@ -36,36 +36,70 @@ services:
       - backend
     restart: unless-stopped
 
-  #  configserver:
-  #    build: configserver
-  #    image: configserver-image
-  #    container_name: configserver
-  #    ports:
-  #      - '8071:8071'
-  #    networks:
-  #      backend:
-  #        aliases:
-  #          - "configserver"
-  #  licensingservice:
-  #    build: licensing-service
-  #    image: licensing-service-image
-  #    container_name: licenseservice
-  #    environment:
-  #      - SPRING_PROFILES_ACTIVE=dev
-  #      - CONFIGSERVER_URI=http://configserver:8071
-  #      - CONFIGSERVER_PORT=8071
-  #      - DATABASESERVER_PORT=5432
-  #    depends_on:
-  #      database:
-  #        condition: service_healthy
-  #      configserver:
-  #        condition: service_healthy
-  #    ports:
-  #      - '8080:8080'
-  #    networks:
-  #      backend:
-  #        aliases:
-  #          - "licenseservice"
+  configserver:
+    build: configserver
+    image: configserver-image
+    container_name: configserver
+    ports:
+      - '8071:8071'
+    networks:
+      backend:
+        aliases:
+          - "configserver"
+  eurekaserver:
+    build: eurekaserver
+    image: eurekaserver-image
+    ports:
+      - "8070:8070"
+    depends_on:
+      database:
+        condition: service_healthy
+      configserver:
+        condition: service_started
+    networks:
+      backend:
+        aliases:
+          - "eurekaserver"
+  licensingservice:
+    build: licensing-service
+    image: licensing-service-image
+    container_name: licenseservice
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - CONFIGSERVER_URI=http://configserver:8071
+      - CONFIGSERVER_PORT=8071
+      - DATABASESERVER_PORT=5432
+    depends_on:
+      database:
+        condition: service_healthy
+      configserver:
+        condition: service_healthy
+    ports:
+      - '8080:8080'
+    networks:
+      backend:
+        aliases:
+          - "licenseservice"
+  organizationservice:
+    build: organization-service
+    image: organization-service-image
+    container_name: organizationservice
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - CONFIGSERVER_URI=http://configserver:8071
+      - CONFIGSERVER_PORT=8071
+      - DATABASESERVER_PORT=5432
+    depends_on:
+      database:
+        condition: service_healthy
+      configserver:
+        condition: service_healthy
+    ports:
+      - '8081:8081'
+    networks:
+      backend:
+        aliases:
+          - "organizationservice"
 #  vault:
 #    image: vault:latest
 #    container_name: vault
