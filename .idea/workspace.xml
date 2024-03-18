@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="не запускается второй сервис">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024,_13_27_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024,_16_28_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024__13_27__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024__16_28__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024,_08_23_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024,_17_15_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024__08_23__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024__17_15__Changes_.xml" beforeDir="false" />
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="FIX: запуск сервиса организаций. Поменять домен для БД">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/optimagrowth/organization/controller/OrganizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/optimagrowth/organization/controller/OrganizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +153,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
+    "service.view.auto.scroll.to.source": "true",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
@@ -372,7 +365,7 @@
       <workItem from="1710426573272" duration="10153000" />
       <workItem from="1710436842679" duration="8000" />
       <workItem from="1710436861338" duration="35000" />
-      <workItem from="1710786125236" duration="6406000" />
+      <workItem from="1710786125236" duration="8535000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -454,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710436889458</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="FIX: запуск сервиса организаций. Поменять домен для БД">
+      <option name="closed" value="true" />
+      <created>1710792813041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710792813041</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +485,8 @@
     <MESSAGE value="add vault" />
     <MESSAGE value="add eureka-server" />
     <MESSAGE value="не запускается второй сервис" />
-    <option name="LAST_COMMIT_MESSAGE" value="не запускается второй сервис" />
+    <MESSAGE value="FIX: запуск сервиса организаций. Поменять домен для БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: запуск сервиса организаций. Поменять домен для БД" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
