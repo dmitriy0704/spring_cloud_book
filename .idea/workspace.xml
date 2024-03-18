@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="не запускается второй сервис" />
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="не запускается второй сервис">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024,_13_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024,_16_28_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024__13_27__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_03_2024__16_28__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024,_08_23_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024,_17_15_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024__08_23__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_03_2024__17_15__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/optimagrowth/organization/controller/OrganizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/optimagrowth/organization/controller/OrganizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/bootstrap.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,52 +118,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build configserver.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build eurekaserver.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build licensing-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build organization-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build spring_cloud_book.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.configserver [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.configserver [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.configserver [classes].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.configserver [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.licensing-service [javadoc].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.spring_cloud_book [init].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LicensingServiceApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LicensingServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrganizationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/devs/code/cloud/cloud-example/javabegin-spring-micro-demo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Docker.docker: Compose Deployment.executor": "Run",
+    "Gradle.Build configserver.executor": "Run",
+    "Gradle.Build eurekaserver.executor": "Run",
+    "Gradle.Build licensing-service.executor": "Run",
+    "Gradle.Build organization-service.executor": "Run",
+    "Gradle.Build spring_cloud_book.executor": "Run",
+    "Gradle.configserver [bootRun].executor": "Run",
+    "Gradle.configserver [build].executor": "Run",
+    "Gradle.configserver [classes].executor": "Run",
+    "Gradle.configserver [clean].executor": "Run",
+    "Gradle.licensing-service [javadoc].executor": "Run",
+    "Gradle.spring_cloud_book [init].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.LicensingServiceApplication (1).executor": "Run",
+    "Spring Boot.LicensingServiceApplication.executor": "Run",
+    "Spring Boot.OrganizationServiceApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/devs/code/cloud/cloud-example/otus-spring_cloud_sample",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -180,29 +195,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
-    <configuration name="configserver [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/configserver" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootRun" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.OrganizationServiceApplication">
     <configuration name="configserver [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -309,8 +302,16 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Gradle.configserver [bootRun]" />
+      <item itemvalue="Docker.docker: Compose Deployment" />
       <item itemvalue="Gradle.configserver [build]" />
       <item itemvalue="Gradle.spring_cloud_book [init]" />
       <item itemvalue="Gradle.configserver [classes]" />
@@ -322,10 +323,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Docker.docker: Compose Deployment" />
         <item itemvalue="Gradle.configserver [classes]" />
         <item itemvalue="Gradle.configserver [build]" />
         <item itemvalue="Gradle.spring_cloud_book [init]" />
-        <item itemvalue="Gradle.configserver [bootRun]" />
       </list>
     </recent_temporary>
   </component>
@@ -371,6 +372,7 @@
       <workItem from="1710426573272" duration="10153000" />
       <workItem from="1710436842679" duration="8000" />
       <workItem from="1710436861338" duration="35000" />
+      <workItem from="1710786125236" duration="6406000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
