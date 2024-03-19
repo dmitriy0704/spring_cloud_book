@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="ADD: Клиенты для доситупа к балансировщику нагрузки">
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/client/OrganizationDiscoveryClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/client/OrganizationFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/client/OrganizationRestTemplateClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/LicensingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/LicensingServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/model/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/model/License.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,7 +371,7 @@
       <workItem from="1710436842679" duration="8000" />
       <workItem from="1710436861338" duration="35000" />
       <workItem from="1710786125236" duration="8747000" />
-      <workItem from="1710860261657" duration="7063000" />
+      <workItem from="1710860261657" duration="10934000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
