@@ -15,7 +15,9 @@ java {
 repositories {
     mavenCentral()
 }
-
+ext {
+    resilience4jVersion = "2.2.0"
+}
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -33,16 +35,11 @@ dependencies {
 
     // Зависимости размыкателя цепи
 
-    ext {
-        resilience4jVersion = "2.2.0"
-    }
+    compileOnly "io.github.resilience4j:resilience4j-spring-boot3:${resilience4jVersion}"
+    implementation "io.github.resilience4j:resilience4j-circuitbreaker:${resilience4jVersion}"
+    implementation "io.github.resilience4j:resilience4j-timelimiter:${resilience4jVersion}"
+    compileOnly 'org.springframework.boot:spring-boot-starter-aop'
 
-    dependencies {
-        compileOnly "io.github.resilience4j:resilience4j-spring-boot3:${resilience4jVersion}"
-        implementation "io.github.resilience4j:resilience4j-circuitbreaker:${resilience4jVersion}"
-        implementation "io.github.resilience4j:resilience4j-timelimiter:${resilience4jVersion}"
-        compileOnly 'org.springframework.boot:spring-boot-starter-aop'
-    }
 
 }
 
