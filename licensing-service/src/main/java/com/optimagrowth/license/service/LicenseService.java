@@ -4,6 +4,10 @@ import com.optimagrowth.license.config.ServiceConfig;
 import com.optimagrowth.license.model.License;
 import com.optimagrowth.license.model.Organization;
 import com.optimagrowth.license.repository.LicenseRepository;
+import com.optimagrowth.license.service.client.OrganizationDiscoveryClient;
+import com.optimagrowth.license.service.client.OrganizationFeignClient;
+import com.optimagrowth.license.service.client.OrganizationRestTemplateClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;
@@ -16,6 +20,15 @@ public class LicenseService {
     final MessageSource messages;
     final LicenseRepository licenseRepository;
     final ServiceConfig config;
+
+
+    @Autowired
+    OrganizationFeignClient organizationFeignClient;
+    @Autowired
+    OrganizationRestTemplateClient organizationRestClient;
+    @Autowired
+    OrganizationDiscoveryClient organizationDiscoveryClient;
+
 
     public LicenseService(
             @Qualifier("messageSource") MessageSource messages,
@@ -40,29 +53,28 @@ public class LicenseService {
         return license.withComment(config.getProperty());
     }
 
-    public License createLicense(License license){
+    public License createLicense(License license) {
         license.setLicenseId(UUID.randomUUID().toString());
         licenseRepository.save(license);
         return license.withComment(config.getProperty());
     }
 
-    public License updateLicense(License license){
+    public License updateLicense(License license) {
         licenseRepository.save(license);
         return license.withComment(config.getProperty());
     }
 
-    public String deleteLicense(String licenseId){
+    public String deleteLicense(String licenseId) {
         String responseMessage = null;
         License license = new License();
         license.setLicenseId(licenseId);
         licenseRepository.delete(license);
-        responseMessage = String.format(messages.getMessage("license.delete.message", null, null),licenseId);
+        responseMessage = String.format(messages.getMessage("license.delete.message", null, null), licenseId);
         return responseMessage;
     }
 
-
     // Метод для выбора клиента доступа сервиса к баласировщику
-    public License getLicense(String licenseId, String organizationId, String clientType){
+    public License getLicense(String licenseId, String organizationId, String clientType) {
 
         License license = licenseRepository.findByOrganizationIdAndLicenseId(organizationId, licenseId);
         if (null == license) {
@@ -83,8 +95,9 @@ public class LicenseService {
             license.setContactPhone(organization.getContactPhone());
         }
 
-        return license.withComment(config.getExampleProperty());
+        return license.withComment(config.getProperty());
     }
+
     private Organization retrieveOrganizationInfo(String organizationId, String clientType) {
         Organization organization = null;
 

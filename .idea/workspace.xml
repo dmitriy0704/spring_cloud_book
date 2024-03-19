@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="FIX: запуск сервиса организаций. Поменять домен для БД">
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="ADD: Клиенты для доситупа к балансировщику нагрузки">
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/client/OrganizationDiscoveryClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/client/OrganizationFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/client/OrganizationRestTemplateClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/LicensingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/LicensingServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/model/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/model/License.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,54 +113,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Docker.docker: Compose Deployment.executor": "Run",
-    "Gradle.Build configserver.executor": "Run",
-    "Gradle.Build eurekaserver.executor": "Run",
-    "Gradle.Build licensing-service.executor": "Run",
-    "Gradle.Build organization-service.executor": "Run",
-    "Gradle.Build spring_cloud_book.executor": "Run",
-    "Gradle.configserver [bootRun].executor": "Run",
-    "Gradle.configserver [build].executor": "Run",
-    "Gradle.configserver [classes].executor": "Run",
-    "Gradle.configserver [clean].executor": "Run",
-    "Gradle.licensing-service [javadoc].executor": "Run",
-    "Gradle.spring_cloud_book [init].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ConfigserverApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.EurekaserverApplication.executor": "Run",
-    "Spring Boot.LicensingServiceApplication (1).executor": "Run",
-    "Spring Boot.LicensingServiceApplication.executor": "Run",
-    "Spring Boot.OrganizationServiceApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/devs/code/cloud/cloud-example/otus-spring_cloud_sample",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "service.view.auto.scroll.to.source": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build configserver.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build eurekaserver.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build licensing-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build organization-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build spring_cloud_book.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [classes].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.licensing-service [javadoc].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring_cloud_book [init].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LicensingServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LicensingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrganizationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/devs/code/cloud/cloud-example/otus-spring_cloud_sample&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -282,6 +285,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrganizationServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_cloud_book.organization-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.organization.OrganizationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrganizationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="organization-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.organization.OrganizationServiceApplication" />
@@ -308,6 +318,7 @@
       <item itemvalue="Gradle.configserver [build]" />
       <item itemvalue="Gradle.spring_cloud_book [init]" />
       <item itemvalue="Gradle.configserver [classes]" />
+      <item itemvalue="Spring Boot.OrganizationServiceApplication (1)" />
       <item itemvalue="Spring Boot.OrganizationServiceApplication" />
       <item itemvalue="Spring Boot.ConfigserverApplication" />
       <item itemvalue="Spring Boot.LicensingServiceApplication" />
@@ -365,7 +376,8 @@
       <workItem from="1710426573272" duration="10153000" />
       <workItem from="1710436842679" duration="8000" />
       <workItem from="1710436861338" duration="35000" />
-      <workItem from="1710786125236" duration="8535000" />
+      <workItem from="1710786125236" duration="8747000" />
+      <workItem from="1710860261657" duration="7063000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -455,7 +467,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710792813041</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ADD: Клиенты для доситупа к балансировщику нагрузки">
+      <option name="closed" value="true" />
+      <created>1710794985082</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710794985082</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +506,8 @@
     <MESSAGE value="add eureka-server" />
     <MESSAGE value="не запускается второй сервис" />
     <MESSAGE value="FIX: запуск сервиса организаций. Поменять домен для БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: запуск сервиса организаций. Поменять домен для БД" />
+    <MESSAGE value="ADD: Клиенты для доситупа к балансировщику нагрузки" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: Клиенты для доситупа к балансировщику нагрузки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
