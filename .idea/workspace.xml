@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="пройдено 7 глав. Начата 8 о Spring Cloud Gateway">
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/gateway-server.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="Spring Cloud Gateway - Config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/eureka-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/eureka-server.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/GatewayServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/bootstrap.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,13 +134,17 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Config.executor": "Run",
     "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.EurekaServer.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.Gateway.executor": "Run",
     "Spring Boot.GatewayServerApplication.executor": "Run",
     "Spring Boot.GatewayserverApplication.executor": "Run",
     "Spring Boot.LicensingServiceApplication (1).executor": "Run",
     "Spring Boot.LicensingServiceApplication.executor": "Run",
+    "Spring Boot.Organization.executor": "Run",
     "Spring Boot.OrganizationServiceApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -206,19 +195,8 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="hiddenConfigurations">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <set>
-              <option value="GatewayServerApplication" />
-            </set>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServerApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServer">
     <configuration name="configserver [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -263,14 +241,14 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="Config" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring_cloud_book.configserver.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.configserver.ConfigserverApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="spring_cloud_book.eurekaserver.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.eureka.EurekaServerApplication" />
       <extension name="coverage">
@@ -283,21 +261,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="Gateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring_cloud_book.gatewayserver.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.gateway.GatewayServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LicensingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="Licensing" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring_cloud_book.licensing-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.license.LicensingServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrganizationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="Organization" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="organization-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.organization.OrganizationServiceApplication" />
       <method v="2">
@@ -336,15 +314,15 @@
       <item itemvalue="Docker.docker: Compose Deployment" />
       <item itemvalue="Gradle.configserver [build]" />
       <item itemvalue="Gradle.configserver [classes]" />
-      <item itemvalue="Spring Boot.GatewayServerApplication" />
-      <item itemvalue="Spring Boot.OrganizationServiceApplication" />
-      <item itemvalue="Spring Boot.ConfigserverApplication" />
-      <item itemvalue="Spring Boot.LicensingServiceApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.Gateway" />
+      <item itemvalue="Spring Boot.Organization" />
+      <item itemvalue="Spring Boot.Config" />
+      <item itemvalue="Spring Boot.Licensing" />
+      <item itemvalue="Spring Boot.EurekaServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.EurekaServer" />
         <item itemvalue="Docker.docker.database: Compose Deployment" />
         <item itemvalue="Docker.docker: Compose Deployment" />
         <item itemvalue="Gradle.configserver [classes]" />
@@ -398,7 +376,9 @@
       <workItem from="1710786125236" duration="8747000" />
       <workItem from="1710860261657" duration="11013000" />
       <workItem from="1710904179442" duration="1161000" />
-      <workItem from="1710924713490" duration="27135000" />
+      <workItem from="1710924713490" duration="27318000" />
+      <workItem from="1710961539601" duration="623000" />
+      <workItem from="1710964362579" duration="2229000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -544,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710938326357</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Spring Cloud Gateway - Config">
+      <option name="closed" value="true" />
+      <created>1710961348844</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710961348844</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +568,8 @@
     <MESSAGE value="ADD: Размыкатель цепи..." />
     <MESSAGE value="ADD: CircuitBreaker..." />
     <MESSAGE value="пройдено 7 глав. Начата 8 о Spring Cloud Gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="пройдено 7 глав. Начата 8 о Spring Cloud Gateway" />
+    <MESSAGE value="Spring Cloud Gateway - Config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Gateway - Config" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
