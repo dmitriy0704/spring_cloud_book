@@ -34,12 +34,10 @@ dependencies {
     implementation 'org.postgresql:postgresql'
 
     // Зависимости размыкателя цепи
+    compileOnly "io.github.resilience4j:resilience4j-spring-cloud2:2.2.0"
 
-    compileOnly "io.github.resilience4j:resilience4j-spring-boot3:${resilience4jVersion}"
-    implementation "io.github.resilience4j:resilience4j-circuitbreaker:${resilience4jVersion}"
-    implementation "io.github.resilience4j:resilience4j-timelimiter:${resilience4jVersion}"
+    compileOnly "io.github.resilience4j:resilience4j-spring-boot3:2.2.0"
+    implementation "io.github.resilience4j:resilience4j-circuitbreaker:2.2.0"
+    implementation "io.github.resilience4j:resilience4j-timelimiter:2.2.0"
     compileOnly 'org.springframework.boot:spring-boot-starter-aop'
-
-
 }
-
