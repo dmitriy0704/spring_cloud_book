@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="ADD: CircuitBreaker...">
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="пройдено 7 глав. Начата 8 о Spring Cloud Gateway">
+      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/GatewayserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/test/java/com/optimagrowth/gateway/GatewayserverApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/config/CircuitBreakerAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/config/CircuitBreakerAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/eurekaserver">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/gatewayserver">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/licensing-service">
@@ -143,7 +152,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
+    "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/devs/code/cloud/cloud-example/otus-spring_cloud_sample",
     "node.js.detected.package.eslint": "true",
@@ -327,6 +336,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-ab7203c4" />
         <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
       </set>
     </attachedChunks>
@@ -369,7 +379,7 @@
       <workItem from="1710786125236" duration="8747000" />
       <workItem from="1710860261657" duration="11013000" />
       <workItem from="1710904179442" duration="1161000" />
-      <workItem from="1710924713490" duration="12075000" />
+      <workItem from="1710924713490" duration="13535000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -507,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710933208787</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="пройдено 7 глав. Начата 8 о Spring Cloud Gateway">
+      <option name="closed" value="true" />
+      <created>1710938326357</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710938326357</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,7 +560,8 @@
     <MESSAGE value="ADD: Размыкатель цепи" />
     <MESSAGE value="ADD: Размыкатель цепи..." />
     <MESSAGE value="ADD: CircuitBreaker..." />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: CircuitBreaker..." />
+    <MESSAGE value="пройдено 7 глав. Начата 8 о Spring Cloud Gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="пройдено 7 глав. Начата 8 о Spring Cloud Gateway" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

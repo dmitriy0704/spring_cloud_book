@@ -33,6 +33,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gatewayserver" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gatewayserver" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/licensing-service" />
         <option name="modules">
           <set>
