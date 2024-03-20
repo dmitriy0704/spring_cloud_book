@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="пройдено 7 глав. Начата 8 о Spring Cloud Gateway">
-      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/GatewayserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/test/java/com/optimagrowth/gateway/GatewayserverApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/gateway-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/eureka-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/eureka-server.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/GatewayServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +133,7 @@
     "Docker.docker: Compose Deployment.executor": "Run",
     "Gradle.Build configserver.executor": "Run",
     "Gradle.Build eurekaserver.executor": "Run",
+    "Gradle.Build gatewayserver.executor": "Run",
     "Gradle.Build licensing-service.executor": "Run",
     "Gradle.Build organization-service.executor": "Run",
     "Gradle.Build spring_cloud_book.executor": "Run",
@@ -146,6 +152,8 @@
     "Spring Boot.ConfigserverApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.GatewayServerApplication.executor": "Run",
+    "Spring Boot.GatewayserverApplication.executor": "Run",
     "Spring Boot.LicensingServiceApplication (1).executor": "Run",
     "Spring Boot.LicensingServiceApplication.executor": "Run",
     "Spring Boot.OrganizationServiceApplication.executor": "Run",
@@ -154,7 +162,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/devs/code/cloud/cloud-example/otus-spring_cloud_sample",
+    "last_opened_file_path": "/home/devs/code/cloud/chapter8",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -174,11 +182,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gatewayserver" />
       <recent name="$PROJECT_DIR$/configserver/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/organization-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/organization-service" />
       <recent name="$PROJECT_DIR$/eurekaserver" />
-      <recent name="$PROJECT_DIR$/licensing-service/src/main/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -198,8 +206,19 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="hiddenConfigurations">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <set>
+              <option value="GatewayServerApplication" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LicensingServiceApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayServerApplication">
     <configuration name="configserver [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -264,16 +283,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LicensingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring_cloud_book.licensing-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.license.LicensingServiceApplication" />
+    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_cloud_book.gatewayserver.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.gateway.GatewayServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrganizationServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring_cloud_book.organization-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.organization.OrganizationServiceApplication" />
+    <configuration name="LicensingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_cloud_book.licensing-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.license.LicensingServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -317,7 +336,7 @@
       <item itemvalue="Docker.docker: Compose Deployment" />
       <item itemvalue="Gradle.configserver [build]" />
       <item itemvalue="Gradle.configserver [classes]" />
-      <item itemvalue="Spring Boot.OrganizationServiceApplication (1)" />
+      <item itemvalue="Spring Boot.GatewayServerApplication" />
       <item itemvalue="Spring Boot.OrganizationServiceApplication" />
       <item itemvalue="Spring Boot.ConfigserverApplication" />
       <item itemvalue="Spring Boot.LicensingServiceApplication" />
@@ -379,7 +398,7 @@
       <workItem from="1710786125236" duration="8747000" />
       <workItem from="1710860261657" duration="11013000" />
       <workItem from="1710904179442" duration="1161000" />
-      <workItem from="1710924713490" duration="13535000" />
+      <workItem from="1710924713490" duration="27135000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />

@@ -1,12 +1,13 @@
 spring:
   application:
-    name: eureka-server
+    name: gateway-server
   cloud:
     config:
       uri: http://localhost:8071
-    loadbalancer:
-      ribbon:
-        enabled: false
+
+eureka:
+  client:
+    enabled: true
 
 management:
   endpoint.health.show-details: "ALWAYS"

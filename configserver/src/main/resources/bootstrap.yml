@@ -15,3 +15,7 @@ spring:
 #          search-paths: config
           default-label: master
         bootstrap: true
+#Enable all Spring Boot Actuator endpoints.
+management:
+  endpoint.health.show-details: "ALWAYS"
+  endpoints.web.exposure.include: "*"

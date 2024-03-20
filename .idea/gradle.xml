@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/configserver" />
             <option value="$PROJECT_DIR$/eurekaserver" />
+            <option value="$PROJECT_DIR$/gatewayserver" />
             <option value="$PROJECT_DIR$/licensing-service" />
             <option value="$PROJECT_DIR$/organization-service" />
           </set>

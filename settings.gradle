@@ -2,5 +2,6 @@ rootProject.name = 'spring_cloud_book'
 
 include ':configserver'
 include ':eurekaserver'
+include ':gatewayserver'
 include ':licensing-service'
 include ':organization-service'
