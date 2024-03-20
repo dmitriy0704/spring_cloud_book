@@ -1,16 +1,21 @@
 package com.optimagrowth.license.config;
 
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
+import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+
+import java.time.Duration;
 
 @Slf4j
 @Configuration
 @Component
 @RefreshScope
 public class CircuitBreakerAutoConfiguration {
-//
+
 //    @Bean
 //    public CircuitBreakerRegistry defaultGenesisCircuitBreaker(
 //            @Value("${bootstrap.resilience4j.circuitbreaker."
@@ -28,24 +33,24 @@ public class CircuitBreakerAutoConfiguration {
 //        log.info("Configuring custom Genesis Circuit Breaker genesis.default");
 //        return CircuitBreakerRegistry.of(circuitBreakerConfig());
 //    }
-//
-//    @Bean
-//    public CircuitBreakerConfig circuitBreakerConfig() {
-//        log.info("circuitBreakerConfig");
-//        return CircuitBreakerConfig.custom()
-//                .minimumNumberOfCalls(2)
-//                .failureRateThreshold(50)
-//                .waitDurationInOpenState(Duration.ofMillis(1000))
-//                .permittedNumberOfCallsInHalfOpenState(2)
-//                .slidingWindowSize(2)
-//                .build();
-//    }
-//
-//    @Bean
-//    public CircuitBreaker defaultCircuitBreaker() {
-//        CircuitBreakerConfig config = CircuitBreakerConfig.custom()
-//                .minimumNumberOfCalls(2)
-//                .build();
-//        return CircuitBreaker.of("default", config);
-//    }
+
+    @Bean
+    public CircuitBreakerConfig circuitBreakerConfig() {
+        log.info("circuitBreakerConfig");
+        return CircuitBreakerConfig.custom()
+                .minimumNumberOfCalls(2)
+                .failureRateThreshold(50)
+                .waitDurationInOpenState(Duration.ofMillis(1000))
+                .permittedNumberOfCallsInHalfOpenState(2)
+                .slidingWindowSize(2)
+                .build();
+    }
+
+    @Bean
+    public CircuitBreaker defaultCircuitBreaker() {
+        CircuitBreakerConfig config = CircuitBreakerConfig.custom()
+                .minimumNumberOfCalls(2)
+                .build();
+        return CircuitBreaker.of("default", config);
+    }
 }

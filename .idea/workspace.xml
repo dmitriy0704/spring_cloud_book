@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="ADD: Размыкатель цепи...">
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/config/CircuitBreakerAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/utils/UserContextHolder.java" afterDir="false" />
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="ADD: CircuitBreaker...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/config/CircuitBreakerAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/config/CircuitBreakerAutoConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/controller/LicenseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/resources/bootstrap.yml" afterDir="false" />
@@ -372,7 +369,7 @@
       <workItem from="1710786125236" duration="8747000" />
       <workItem from="1710860261657" duration="11013000" />
       <workItem from="1710904179442" duration="1161000" />
-      <workItem from="1710924713490" duration="8427000" />
+      <workItem from="1710924713490" duration="12075000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -502,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710926253917</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ADD: CircuitBreaker...">
+      <option name="closed" value="true" />
+      <created>1710933208787</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1710933208787</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +541,8 @@
     <MESSAGE value="ADD: Клиенты для доситупа к балансировщику нагрузки" />
     <MESSAGE value="ADD: Размыкатель цепи" />
     <MESSAGE value="ADD: Размыкатель цепи..." />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: Размыкатель цепи..." />
+    <MESSAGE value="ADD: CircuitBreaker..." />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: CircuitBreaker..." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

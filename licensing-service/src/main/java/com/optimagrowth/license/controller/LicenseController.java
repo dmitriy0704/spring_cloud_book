@@ -29,9 +29,11 @@ public class LicenseController {
 
     @Operation(summary = "Получение лицензии", description = "Позволяет создать лицензию и вернуть ее")
     @RequestMapping(value = "/{licenseId}", method = RequestMethod.GET)
-    public ResponseEntity<License> getLicense(@PathVariable("organizationId") String organizationId, @PathVariable("licenseId") String licenseId) {
-        License license = licenseService.getLicense(licenseId, organizationId);
-        license.add(linkTo(methodOn(LicenseController.class).getLicense(organizationId, license.getLicenseId())).withSelfRel(),
+    public ResponseEntity<License> getLicenseSimple(@PathVariable("organizationId") String organizationId, @PathVariable("licenseId") String licenseId) {
+        License license = licenseService.getLicenseSimple(licenseId, organizationId);
+
+
+        license.add(linkTo(methodOn(LicenseController.class).getLicenseSimple(organizationId, license.getLicenseId())).withSelfRel(),
                 linkTo(methodOn(LicenseController.class).createLicense(license)).withRel("createLicense"),
 //                linkTo(methodOn(LicenseController.class).updateLicense(license)).withRel("updateLicense"),
                 linkTo(methodOn(LicenseController.class).deleteLicense(license.getLicenseId())).withRel("deleteLicense"));
