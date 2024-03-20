@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="ADD: Клиенты для доситупа к балансировщику нагрузки">
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="ADD: Размыкатель цепи">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/licensing-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/licensing-service/src/main/java/com/optimagrowth/license/service/LicenseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +371,8 @@
       <workItem from="1710436842679" duration="8000" />
       <workItem from="1710436861338" duration="35000" />
       <workItem from="1710786125236" duration="8747000" />
-      <workItem from="1710860261657" duration="10934000" />
+      <workItem from="1710860261657" duration="11013000" />
+      <workItem from="1710904179442" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -469,7 +470,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710794985082</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ADD: Размыкатель цепи">
+      <option name="closed" value="true" />
+      <created>1710882905357</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710882905357</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ADD: Размыкатель цепи">
+      <option name="closed" value="true" />
+      <created>1710882950373</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710882950373</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +518,8 @@
     <MESSAGE value="не запускается второй сервис" />
     <MESSAGE value="FIX: запуск сервиса организаций. Поменять домен для БД" />
     <MESSAGE value="ADD: Клиенты для доситупа к балансировщику нагрузки" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: Клиенты для доситупа к балансировщику нагрузки" />
+    <MESSAGE value="ADD: Размыкатель цепи" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: Размыкатель цепи" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
