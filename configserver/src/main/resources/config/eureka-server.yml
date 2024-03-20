@@ -12,12 +12,14 @@ eureka:
     leaseRenewalIntervalInSeconds: 5
     lease-expiration-duration-in-seconds: 5
   client: 
-    registryFetchIntervalSeconds: 5
+    # registryFetchIntervalSeconds: 5
     registerWithEureka: false
     fetchRegistry:  false
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
-  server:
-    waitTimeInMsWhenSyncEmpty: 5
+  # server:
+    # waitTimeInMsWhenSyncEmpty: 5
   # renewalPercentThreshold: 0.85
   # enableSelfPreservation: false
+management.endpoint.health.show-details: "ALWAYS"
+management.endpoints.web.exposure.include: "*"

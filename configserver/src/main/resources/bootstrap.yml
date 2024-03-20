@@ -6,14 +6,16 @@ spring:
     name: config-server
   profiles:
     active:
-      - git
+      - native
   cloud:
     config:
       server:
-        git:
-          uri: git@github.com:dmitriy0704/springcloudconfig.git/
+        native:
+          search-locations: classpath:/config
+#        git:
+#          uri: git@github.com:dmitriy0704/springcloudconfig.git/
 #          search-paths: config
-          default-label: master
+#          default-label: master
         bootstrap: true
 #Enable all Spring Boot Actuator endpoints.
 management:
