@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="Spring Cloud Gateway - Config - Success!">
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/filters/FilterUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/filters/ResponseFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/filters/TrackingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/eureka-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/eureka-server.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/gateway-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/gateway-server.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,62 +112,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Docker.docker.database: Compose Deployment.executor": "Run",
-    "Docker.docker: Compose Deployment.executor": "Run",
-    "Gradle.Build configserver.executor": "Run",
-    "Gradle.Build eurekaserver.executor": "Run",
-    "Gradle.Build gatewayserver.executor": "Run",
-    "Gradle.Build licensing-service.executor": "Run",
-    "Gradle.Build organization-service.executor": "Run",
-    "Gradle.Build spring_cloud_book.executor": "Run",
-    "Gradle.configserver [bootRun].executor": "Run",
-    "Gradle.configserver [build].executor": "Run",
-    "Gradle.configserver [classes].executor": "Run",
-    "Gradle.configserver [clean].executor": "Run",
-    "Gradle.licensing-service [javadoc].executor": "Run",
-    "Gradle.spring_cloud_book [init].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Config.executor": "Run",
-    "Spring Boot.ConfigserverApplication.executor": "Run",
-    "Spring Boot.EurekaServer.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.EurekaserverApplication.executor": "Run",
-    "Spring Boot.Gateway.executor": "Run",
-    "Spring Boot.GatewayServerApplication.executor": "Run",
-    "Spring Boot.GatewayserverApplication.executor": "Run",
-    "Spring Boot.LicensingServiceApplication (1).executor": "Run",
-    "Spring Boot.LicensingServiceApplication.executor": "Run",
-    "Spring Boot.Organization.executor": "Run",
-    "Spring Boot.OrganizationServiceApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/devs/code/cloud/spring_cloud_book/configserver/src/main/resources/config",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "service.view.auto.scroll.to.source": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker.database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build configserver.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build eurekaserver.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build gatewayserver.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build licensing-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build organization-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build spring_cloud_book.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [classes].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.licensing-service [javadoc].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring_cloud_book [init].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Config.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServer.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Gateway.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LicensingServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LicensingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Organization.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrganizationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/devs/code/cloud/spring_cloud_book/configserver/src/main/resources/config&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -251,7 +251,7 @@
       </method>
     </configuration>
     <configuration name="EurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
-      <module name="spring_cloud_book.eurekaserver.main" />
+      <module name="eurekaserver.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.eureka.EurekaServerApplication" />
       <extension name="coverage">
         <pattern>
@@ -263,7 +263,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_cloud_book.eurekaserver.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.eureka.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Gateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gatewayserver.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.gateway.GatewayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring_cloud_book.gatewayserver.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.gateway.GatewayServerApplication" />
       <method v="2">
@@ -277,8 +291,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LicensingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="licensing-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.license.LicensingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Organization" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="organization-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.organization.OrganizationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrganizationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_cloud_book.organization-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.organization.OrganizationServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -316,6 +344,10 @@
       <item itemvalue="Docker.docker: Compose Deployment" />
       <item itemvalue="Gradle.configserver [build]" />
       <item itemvalue="Gradle.configserver [classes]" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.GatewayServerApplication" />
+      <item itemvalue="Spring Boot.LicensingServiceApplication" />
+      <item itemvalue="Spring Boot.OrganizationServiceApplication" />
       <item itemvalue="Spring Boot.Gateway" />
       <item itemvalue="Spring Boot.Organization" />
       <item itemvalue="Spring Boot.Config" />
