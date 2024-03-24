@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="Spring Cloud Gateway - Config - Success!">
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/filters/FilterUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/filters/ResponseFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/optimagrowth/gateway/filters/TrackingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_03_2024,_17_20_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_03_2024__17_20__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +118,8 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker.database: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker.keycloack: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker.keycloak: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build configserver.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build eurekaserver.executor&quot;: &quot;Run&quot;,
@@ -198,51 +201,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServer">
-    <configuration name="configserver [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/configserver" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="configserver [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/configserver" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="classes" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Docker.docker: Compose Deployment">
     <configuration name="Config" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring_cloud_book.configserver.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.optimagrowth.configserver.ConfigserverApplication" />
@@ -339,11 +298,37 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker.keycloack: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="keycloack" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="keycloak" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker.keycloak: Compose Deployment" />
+      <item itemvalue="Docker.docker.keycloack: Compose Deployment" />
       <item itemvalue="Docker.docker.database: Compose Deployment" />
       <item itemvalue="Docker.docker: Compose Deployment" />
-      <item itemvalue="Gradle.configserver [build]" />
-      <item itemvalue="Gradle.configserver [classes]" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.GatewayServerApplication" />
       <item itemvalue="Spring Boot.LicensingServiceApplication" />
@@ -356,11 +341,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker: Compose Deployment" />
+        <item itemvalue="Docker.docker.keycloak: Compose Deployment" />
+        <item itemvalue="Docker.docker.keycloack: Compose Deployment" />
         <item itemvalue="Spring Boot.EurekaServer" />
         <item itemvalue="Docker.docker.database: Compose Deployment" />
-        <item itemvalue="Docker.docker: Compose Deployment" />
-        <item itemvalue="Gradle.configserver [classes]" />
-        <item itemvalue="Gradle.configserver [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -413,6 +398,9 @@
       <workItem from="1710924713490" duration="27318000" />
       <workItem from="1710961539601" duration="623000" />
       <workItem from="1710964362579" duration="2581000" />
+      <workItem from="1711182927580" duration="5703000" />
+      <workItem from="1711196786203" duration="13389000" />
+      <workItem from="1711274661783" duration="2464000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
