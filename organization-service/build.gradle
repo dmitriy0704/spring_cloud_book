@@ -35,13 +35,21 @@ dependencies {
     implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-bootstrap', version: '4.1.1'
     implementation 'org.postgresql:postgresql'
 
-	// Add keycloak:
+    // Add keycloak:
     // https://mvnrepository.com/artifact/org.keycloak/keycloak-spring-boot-starter
     implementation group: 'org.keycloak', name: 'keycloak-spring-boot-starter', version: '3.1.0.Final'
-// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
-	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '3.2.4'
-// https://mvnrepository.com/artifact/org.keycloak.bom/keycloak-adapter-bom
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '3.2.4'
+    // https://mvnrepository.com/artifact/org.keycloak.bom/keycloak-adapter-bom
     implementation group: 'org.keycloak.bom', name: 'keycloak-adapter-bom', version: '3.0.0.CR1', ext: 'pom'
+
+    // Message streams
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-stream
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-stream', version: '4.1.0'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-stream-kafka
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-stream-kafka', version: '4.1.0'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-stream-binder-kafka
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-stream-binder-kafka', version: '4.1.0'
 
 
 }
