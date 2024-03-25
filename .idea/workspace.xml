@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="Add keycloak">
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/optimagrowth/organization/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="40b71946-3a45-4e65-827a-030b0ffa67b1" name="Changes" comment="keycloak config - рассмотреть новые версии авторизации запросов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/licensing-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/organization-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/optimagrowth/organization/config/SecurityConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +56,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="configserver" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="licensing-service" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="licensing-service" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -403,7 +393,9 @@
       <workItem from="1711182927580" duration="5703000" />
       <workItem from="1711196786203" duration="13389000" />
       <workItem from="1711274661783" duration="3086000" />
-      <workItem from="1711284505094" duration="4246000" />
+      <workItem from="1711284505094" duration="4991000" />
+      <workItem from="1711351809441" duration="601000" />
+      <workItem from="1711353444430" duration="2251000" />
     </task>
     <task id="LOCAL-00001" summary="Add md-files">
       <option name="closed" value="true" />
@@ -573,7 +565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711278024412</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="keycloak config - рассмотреть новые версии авторизации запросов">
+      <option name="closed" value="true" />
+      <created>1711301559044</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1711301559044</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +612,8 @@
     <MESSAGE value="Spring Cloud Gateway - Config" />
     <MESSAGE value="Spring Cloud Gateway - Config - Success!" />
     <MESSAGE value="Add keycloak" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add keycloak" />
+    <MESSAGE value="keycloak config - рассмотреть новые версии авторизации запросов" />
+    <option name="LAST_COMMIT_MESSAGE" value="keycloak config - рассмотреть новые версии авторизации запросов" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
